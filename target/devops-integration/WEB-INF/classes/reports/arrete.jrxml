@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name=" Device" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="21c62979-9545-4c6b-b3d5-c46aed018eed">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Device"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Dataset1" uuid="0b609937-6adc-46fd-8ed5-5f36aff7145f">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Device"/>
+		<queryString language="json">
+			<![CDATA[]]>
+		</queryString>
+		<field name="numReclamation" class="java.lang.Integer">
+			<property name="net.sf.jasperreports.json.field.expression" value="numReclamation"/>
+			<fieldDescription><![CDATA[numReclamation]]></fieldDescription>
+		</field>
+		<field name="refReclamation" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="refReclamation"/>
+			<fieldDescription><![CDATA[refReclamation]]></fieldDescription>
+		</field>
+		<field name="prenomNomSourceReclamation" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="prenomNomSourceReclamation"/>
+			<fieldDescription><![CDATA[prenomNomSourceReclamation]]></fieldDescription>
+		</field>
+		<field name="prenomNomSourceDestinataire" class="java.lang.String">
+			<property name="net.sf.jasperreports.json.field.expression" value="prenomNomSourceDestinataire"/>
+			<fieldDescription><![CDATA[prenomNomSourceDestinataire]]></fieldDescription>
+		</field>
+		
+	</subDataset>
+	<parameter name="P_LOGO_G" class="java.lang.String"/>
+	<parameter name="P_LOGO_D" class="java.lang.String"/>
+	<parameter name="reclamation" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<queryString language="json">
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="92" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="-13" width="555" height="92" backcolor="#006699" uuid="ab39002b-7d4b-4650-9cf2-d52fcc8658ab"/>
+				<staticText>
+					<reportElement x="369" y="13" width="176" height="63" forecolor="#FFFFFF" uuid="e40a946f-8e40-459e-bbb6-f70ca1cc3f2a"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="MyArial2" size="13"/>
+					</textElement>
+					<text><![CDATA[الجمهورية التونسية
+وزارة الداخلية
+بلدية المنستير
+]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="9" y="23" width="71" height="30" forecolor="#FFFFFF" uuid="14dbb985-c2e3-4344-bde2-711d3f2ec1fc"/>
+					<textElement verticalAlignment="Middle">
+						<font fontName="Algerian" size="13"/>
+					</textElement>
+					<text><![CDATA[Date :]]></text>
+				</staticText>
+				<textField pattern="MMMMM dd, yyyy">
+					<reportElement x="60" y="31" width="160" height="30" forecolor="#FFFFFF" uuid="4c8682c6-5e22-4219-9e0c-57006f9da4ff"/>
+					<textElement>
+						<font fontName="Algerian" size="13"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement x="250" y="0" width="60" height="92" uuid="5f2a494c-0c83-4a7a-ac68-f6dbcdbdf11a"/>
+					
+				</image>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="85">
+			<staticText>
+				<reportElement x="169" y="20" width="210" height="30" uuid="c0afd391-d005-45c4-b57e-e9b2a97e4c76"/>
+				<textElement textAlignment="Center">
+					<font fontName="MyArial2" size="18"/>
+				</textElement>
+				<text><![CDATA[قرار ازالة]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="59">
+			<staticText>
+				<reportElement x="0" y="10" width="555" height="49" uuid="44740234-ecd8-4989-9efa-e1a40039f45f"/>
+				<textElement textAlignment="Center">
+					<font fontName="MyArial2" size="15"/>
+				</textElement>
+				<text><![CDATA[ان رئيس البلدية
+بعد إطلاعه؛ على القانون الأساسي عدد 29 لسنة 2018 المؤرخ في 09 ماي 2018 و المتعلق بإصدار
+مجلة الجماعات المحلية . ,]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch"/>
+	</detail>
+	<pageFooter>
+		<band height="19" splitType="Stretch">
+			<textField evaluationTime="Page">
+				<reportElement x="500" y="4" width="30" height="15" uuid="849f9e09-7127-4cc1-84c4-6885941439b2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" markup="styled">
+					<font fontName="Arial" size="10" isBold="true" pdfFontName="Helvetica-bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}+"/"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="530" y="4" width="24" height="15" uuid="a82894d3-d00e-4a0e-bd99-a54cf86cc10e">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement markup="styled">
+					<font fontName="Arial" size="10" isBold="true" pdfFontName="Helvetica-bold"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
